@@ -44,9 +44,10 @@
     Ki >  v    c    x    e    r
     Kd >  z    s    a    q    w
 
-  Setpoints >
+  Setpoints (QC assumes it is at (0,0))
+    x = R*cos(Theta), y = R*sin(Theta) >
     Radius r, R (--,++)
-    Yaw    t, T (--,++)
+    Theta  t, T (--,++)  (0 degrees is relative to N)
 
   General Motor Control >
   g > start
@@ -233,6 +234,7 @@ void loop() {
     PID_E.Compute() ;
     Roll_Setpoint = OutputE ;
     Pitch_Setpoint = OutputN ;
+    newDataGPS = FALSE ;
   }
   /* End Position Update */
 
