@@ -1,5 +1,5 @@
 # Quadcopter---Dimensional-Testing-Code
-.ino Files for Teensy 3.2 for testing YPR, XYZ control.  XYZ is positional control, outputting setpoints into YPR controller inputs.  YPR is control over yaw, pitch, and roll.
+.ino Files for Teensy 3.2 for testing YPR, XYZ control.  XYZ is positional control, outputting setpoints into YPR controller inputs.  YPR is control over yaw, pitch, and roll.  XY_YPR_testCode is the most extensively researched custom test code, it uses Linear Algebra concepts to calculate pitch and roll contributions to arrive at a destination setpoint.
 
 ## Motivation
 
